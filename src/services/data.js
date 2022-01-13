@@ -5,6 +5,7 @@ export async function getAlbums() {
   return checkError(request);
 }
 
-export async function getAlbumsById(id) {}
-let request = await client.from('dog-data').select('*').match({ id }).single();
-return checkError(request);
+export async function getAlbumsById(id) {
+  let request = await client.from('albums').select('*').match({ id }).single();
+  return checkError(request);
+}
