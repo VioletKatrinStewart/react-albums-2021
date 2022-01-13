@@ -10,6 +10,8 @@
 .homediv {
   width: 300px;
   color: white;
+  border: 20px solid plum;
+  justify-content: space-between;
 }
 
 img {
