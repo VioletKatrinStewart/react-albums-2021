@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AlbumInfo(album) {
+export default function AlbumInfo({ album }) {
   return (
     <div className="album-div">
       <h3>Album: {album.album}</h3>

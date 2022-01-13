@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/albums/:id" exact component={AlbumDetail} />
+        <Route path="/albums" exact component={AlbumDetail} />
       </Switch>
     </BrowserRouter>
   );
