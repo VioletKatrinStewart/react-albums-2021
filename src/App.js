@@ -5,12 +5,14 @@ import AlbumDetail from './Views/AlbumDetail';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/albums" exact component={AlbumDetail} />
-      </Switch>
-    </BrowserRouter>
+    <div className="albumdiv">
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/albums" exact component={AlbumDetail} />
+        </Switch>
+      </BrowserRouter>
+    </div>
   );
 }
 

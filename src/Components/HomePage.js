@@ -3,9 +3,13 @@ import { Link } from 'react-router-dom';
 
 export default function HomePage() {
   return (
-    <div>
-      <p>THIS IS DUMMY TEXT FOR WHAT I WILL PUT ON MY HOME PAGE</p>
-      <Link to="/albums">LINK TO ALBUM LIST</Link>
+    <div className="homediv">
+      <h3>Best of 2021</h3>
+      <p>
+        Here are my picks for the top albums and EPs released in 2021. This list is in alphabetical
+        order and not ranked. Enjoy!
+      </p>
+      <Link to="/albums">Start</Link>
     </div>
   );
 }

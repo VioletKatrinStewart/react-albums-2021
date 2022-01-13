@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import AlbumInfo from '../Components/AlbumInfo';
 import { getAlbumsById } from '../services/data';
-
+import './AlbumDetail.css';
 export default function AlbumDetail() {
   const [album, setAlbum] = useState([]);
   const [loading, setLoading] = useState(true);
