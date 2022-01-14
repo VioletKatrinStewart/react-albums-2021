@@ -1,5 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
 .albumdiv {
-  background-color: pink;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +24,7 @@
 
 img {
   width: 100%;
+  height: 260px;
   object-fit: contain;
   border: 20px solid plum;
 }
@@ -28,4 +32,13 @@ img {
 .album-info {
   width: 300px;
   color: white;
+  background-color: pink;
+  border: solid 20px pink;
+}
+
+.buttondiv {
+  display: flex;
+  justify-content: center;
+  border: solid plum 5px;
+  background-color: plum;
 }

@@ -22,12 +22,14 @@ export default function AlbumDetail() {
   return (
     <div>
       <AlbumInfo album={album} />
-      <button onClick={() => setAlbumId(albumId - 1)} disabled={albumId <= 1}>
-        Prev
-      </button>
-      <button onClick={() => setAlbumId(albumId + 1)} disabled={albumId >= 27}>
-        Next
-      </button>
+      <div className="buttondiv">
+        <button onClick={() => setAlbumId(albumId - 1)} disabled={albumId <= 1}>
+          Prev
+        </button>
+        <button onClick={() => setAlbumId(albumId + 1)} disabled={albumId >= 27}>
+          Next
+        </button>
+      </div>
     </div>
   );
 }
